@@ -5,27 +5,27 @@ function Invoke-SomeName
     param(
         [Alias("c")]
         [String[]]
-        $collectionmethods = [String[]]@('Default'),
+        $CollectionMethods = [String[]]@('Default'),
 
         [Alias("d")]
         [String]
-        $dom,
+        $Domain,
         
         [Alias("s")]
         [Switch]
-        $SF,
+        $SearchForest,
 
         [Switch]
         $Stealth,
 
         [String]
-        $LF,
+        $LdapFilter,
 
         [String]
-        $DN,
+        $DistinguishedName,
 
         [String]
-        $CF,
+        $ComputerFile,
 
         [ValidateScript({ Test-Path -Path $_ })]
         [String]
@@ -48,38 +48,38 @@ function Invoke-SomeName
         $RandomFilenames,
 
         [String]
-        $ZF,
+        $ZipFilename,
         
         [Switch]
         $NoZip,
         
         [String]
-        $ZP,
+        $ZipPassword,
         
         [Switch]
         $TrackComputerCalls,
         
         [Switch]
-        $PP,
+        $PrettyPrint,
 
         [String]
-        $LU,
+        $LdapUsername,
 
         [String]
-        $LP,
+        $LdapPassword,
 
         [string]
-        $domC,
+        $DomainController,
 
         [ValidateRange(0, 65535)]
         [Int]
-        $LPort,
+        $LdapPort,
 
         [Switch]
-        $SecureL,
+        $SecureLdap,
         
         [Switch]
-        $DCV,
+        $DisableCertVerification,
 
         [Switch]
         $DisableSigning,
@@ -117,7 +117,7 @@ function Invoke-SomeName
         $RealDNSName,
 
         [Switch]
-        $collectionmethodslectAllProperties,
+        $CollectAllProperties,
 
         [Switch]
         $Loop,
