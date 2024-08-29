@@ -5,7 +5,7 @@ function Invoke-SomeName
     param(
         [Alias("c")]
         [String[]]
-        $col = [String[]]@('Default'),
+        $collectionmethods = [String[]]@('Default'),
 
         [Alias("d")]
         [String]
