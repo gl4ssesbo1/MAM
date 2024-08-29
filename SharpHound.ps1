@@ -117,7 +117,7 @@ function Invoke-SomeName
         $RealDNSName,
 
         [Switch]
-        $CollectAllProperties,
+        $collectionmethodslectAllProperties,
 
         [Switch]
         $Loop,
