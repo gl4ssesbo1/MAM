@@ -176,5 +176,5 @@ function Invoke-SomeName
 	$BindingFlags = [Reflection.BindingFlags] "Public,Static"
 	$a = @()
 	$Assembly.GetType("Costura.AssemblyLoader", $false).GetMethod("Attach", $BindingFlags).Invoke($Null, @())
-	$Assembly.GetType("Sh"+"arp"+"ho"+"un"+"d.Pr"+"ogr"+"am").GetMethod("In"+"voke"+"Sh"+"arp"+"H"+"ou"+"nd").Invoke($Null, @(,$passed)
+	$Assembly.GetType("Sh"+"arp"+"ho"+"un"+"d.Pr"+"ogr"+"am").GetMethod("In"+"voke"+"Sh"+"arp"+"H"+"ou"+"nd").Invoke($Null, @(,$passed))
 }
